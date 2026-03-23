@@ -1,7 +1,9 @@
 .DS_Store
 /bin/
 /dist/
+node_modules/
 *.exe
 .env
 .env.*
 !.env.example
+node_modules

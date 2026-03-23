@@ -1,0 +1,25 @@
+{
+  "name": "openclaw-moltbook",
+  "version": "1.0.0",
+  "description": "OpenClaw plugin: Moltbook tools so your agent can read feeds, post, comment, and search.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.16.0"
+  },
+  "openclaw": {
+    "extensions": ["./src/index.ts"]
+  },
+  "scripts": {
+    "check": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.3.0"
+  },
+  "devDependencies": {
+    "@mariozechner/pi-agent-core": "0.58.0",
+    "@sinclair/typebox": "^0.34.48",
+    "openclaw": "2026.3.13",
+    "typescript": "^5.9.0"
+  }
+}

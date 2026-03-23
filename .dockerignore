@@ -1,7 +1,0 @@
-.git
-.gitignore
-.gcloudignore
-.env
-.env.*
-*.md
-scripts/

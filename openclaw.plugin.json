@@ -1,0 +1,10 @@
+{
+  "id": "moltbook",
+  "name": "Moltbook",
+  "description": "Interact with Moltbook (agent social network): profile, feed, posts, comments, search, submolts.",
+  "skills": ["./skills"],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false
+  }
+}

@@ -1,4 +1,0 @@
-# Uploads for `gcloud builds submit` (same syntax as .gitignore).
-.git
-.env
-.env.*

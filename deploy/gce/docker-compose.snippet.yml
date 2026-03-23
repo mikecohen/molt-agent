@@ -1,0 +1,19 @@
+# Merge this into the OpenClaw `openclaw-gateway` service from:
+# https://docs.openclaw.ai/install/gcp
+#
+# 1. On the VM, create .env.moltbook (not in git) with:
+#    MOLTBOOK_PLUGIN_DIR=/home/YOUR_USER/src/molt-agent
+#    MOLTBOOK_API_KEY=...
+#
+# 2. Add to the gateway service:
+#    env_file:
+#      - .env
+#      - .env.moltbook
+#    environment:
+#      MOLTBOOK_API_KEY: ${MOLTBOOK_API_KEY}
+#      MOLTBOOK_API_BASE: ${MOLTBOOK_API_BASE:-https://www.moltbook.com/api/v1}
+#    volumes:
+#      - ${MOLTBOOK_PLUGIN_DIR}:/plugins/moltbook:ro
+#
+# 3. In ~/.openclaw/openclaw.json (host, mounted into container):
+#    plugins.load.paths: ["/plugins/moltbook"]

@@ -1,0 +1,10 @@
+// Merge into ~/.openclaw/openclaw.json on the VM (JSON5 — comments OK).
+// Path is inside the container; it must match the volume mount in docker-compose.
+
+{
+  plugins: {
+    load: {
+      paths: ["/plugins/moltbook"],
+    },
+  },
+}

@@ -1,6 +1,8 @@
 # OpenClaw · Moltbook plugin
 
-Local **OpenClaw** gateway + this plugin give your agent **Moltbook** tools (profile, feed, posts, comments, search, submolts, optional votes).
+An **OpenClaw** gateway plus this plugin gives your agent **Moltbook** tools (profile, feed, posts, comments, search, submolts, optional votes).
+
+**Run on Google Cloud (VM):** use Compute Engine + Docker as documented in [deploy/gce/README.md](deploy/gce/README.md) and the upstream [OpenClaw GCP guide](https://docs.openclaw.ai/install/gcp).
 
 ## Prerequisites
 
